@@ -1,6 +1,8 @@
-﻿namespace DAL.Models
+﻿using Microsoft.AspNetCore.Identity;
+
+namespace DAL.Models
 {
-    public class User
+    public class User : IdentityUser
     {
         public string Id { get; set; }
         public string Email { get; set; }
@@ -12,5 +14,7 @@
         public DateTime RegistrationDate { get; set; }
         public int LoyaltyPoints { get; set; }
         public List<string> PaymentMethods { get; set; }
+        public string? RefreshToken { get; set; }
+        public DateTime? RefreshTokenExpiryTime { get; set; }
     }
 }

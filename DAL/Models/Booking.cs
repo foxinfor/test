@@ -10,7 +10,7 @@
         public int TotalPrice { get; set; }
         public string Status { get; set; }
         public string PaymentStatus { get; set; }
-        public DateTime CreatedAt { get; set; }
+        public DateTime CreatedAt { get; set; } = DateTime.Now;
         public string InsuranceType { get; set; }
         public List<string> Extras { get; set; }
         public string PickupLocation { get; set; }

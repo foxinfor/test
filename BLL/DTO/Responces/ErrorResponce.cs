@@ -7,6 +7,6 @@ namespace BLL.DTO.Responces
         public HttpStatusCode StatusCode { get; set; }
         public string Message { get; set; }
         public string? Details { get; set; }
-        public string? StackTrace { get; set; }
+        //public string? StackTrace { get; set; } клиент не должен знать 
     }
 }

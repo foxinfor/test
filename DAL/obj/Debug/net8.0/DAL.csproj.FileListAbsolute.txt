@@ -1,0 +1,15 @@
+D:\labs\c#\modsen\DAL\bin\Debug\net8.0\DAL.deps.json
+D:\labs\c#\modsen\DAL\bin\Debug\net8.0\DAL.runtimeconfig.json
+D:\labs\c#\modsen\DAL\bin\Debug\net8.0\DAL.dll
+D:\labs\c#\modsen\DAL\bin\Debug\net8.0\DAL.pdb
+D:\labs\c#\modsen\DAL\obj\Debug\net8.0\DAL.csproj.AssemblyReference.cache
+D:\labs\c#\modsen\DAL\obj\Debug\net8.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\labs\c#\modsen\DAL\obj\Debug\net8.0\DAL.AssemblyInfoInputs.cache
+D:\labs\c#\modsen\DAL\obj\Debug\net8.0\DAL.AssemblyInfo.cs
+D:\labs\c#\modsen\DAL\obj\Debug\net8.0\DAL.csproj.CoreCompileInputs.cache
+D:\labs\c#\modsen\DAL\obj\Debug\net8.0\DAL.sourcelink.json
+D:\labs\c#\modsen\DAL\obj\Debug\net8.0\DAL.dll
+D:\labs\c#\modsen\DAL\obj\Debug\net8.0\refint\DAL.dll
+D:\labs\c#\modsen\DAL\obj\Debug\net8.0\DAL.pdb
+D:\labs\c#\modsen\DAL\obj\Debug\net8.0\DAL.genruntimeconfig.cache
+D:\labs\c#\modsen\DAL\obj\Debug\net8.0\ref\DAL.dll

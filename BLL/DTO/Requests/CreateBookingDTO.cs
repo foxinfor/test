@@ -19,7 +19,9 @@ namespace BLL.DTO.Requests
         [DataType(DataType.Date)]
         public DateTime EndDate { get; set; }
 
-
+        public string Status { get; set; }
+        public string PaymentStatus { get; set; }
+        public DateTime CreatedAt { get; set; }
 
         [Required]
         [MinLength(3, ErrorMessage = "Место получения должно содержать минимум 3 символа.")]

@@ -2,8 +2,8 @@
 {
     public class DamageDTO
     {
-        public string Description { get; set; }
-        public string Severity { get; set; }
-        public int RepairCost { get; set; }
+        public string DescriptionDamage { get; set; }
+        public string SeverityDamage { get; set; }
+        public int RepairCostDamage { get; set; }
     }
 }

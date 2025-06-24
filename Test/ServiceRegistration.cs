@@ -1,4 +1,5 @@
 ﻿using BLL.DTO.Models;
+using BLL.DTO.Requests;
 using BLL.Interfaces;
 using BLL.Services;
 using BLL.Validators;
@@ -20,6 +21,7 @@ namespace Test
 
         public static void AddServices(this IServiceCollection services)
         {
+            services.AddScoped<ICarService, CarService>();
             services.AddScoped<IBookingService, BookingService>();
             services.AddScoped<IAuthService, AuthService>();
             services.AddScoped<ITokenService, TokenService>();
@@ -29,8 +31,12 @@ namespace Test
         public static void AddValidators(this IServiceCollection services)
         {
             services.AddScoped<IValidator<BookingDTO>, BookingDTOValidator>();
-            
-        }
+            services.AddScoped<IValidator<CreateBookingDTO>, CreateBookingDTOValidator>();
+            services.AddScoped<IValidator<UpdateBookingDTO>, UpdateBookingDTOValidator>();
 
+            services.AddScoped<IValidator<CarDTO>, CarDTOValidator>();
+            services.AddScoped<IValidator<CreateCarDTO>, CreateCarDTOValidator>();
+            services.AddScoped<IValidator<UpdateCarDTO>, UpdateCarDTOValidator>();
+        }
     }
 }

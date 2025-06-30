@@ -82,5 +82,20 @@ namespace BLL.Services
             _mapper.Map(updateCarDto, existingCar);
             await _carRepository.UpdateAsync(existingCar, cancellationToken);
         }
+
+
+
+
+        public async Task<IEnumerable<CarDTO>> GetAllCarsFilteredAsync(string? Brand, string? Model, int? dailyRate, int? hourlyRate, CancellationToken cancellationToken = default)
+        {
+            var cars = await _carRepository.GetAllCarsFilteredAsync(Brand,Model,dailyRate,hourlyRate,cancellationToken);
+            return _mapper.Map<IEnumerable<CarDTO>>(cars);
+        }
+
+        public async Task<IEnumerable<CarDTO>> GetAllCarsByCharacteristicAsync(string? fuelType, string? transmission, int? seats, string? color, CancellationToken cancellationToken = default)
+        {
+            var cars = await _carRepository.GetAllCarsByCharacteristicAsync(fuelType,transmission,seats,color,cancellationToken);
+            return _mapper.Map<IEnumerable<CarDTO>>(cars);
+        }
     }
 }

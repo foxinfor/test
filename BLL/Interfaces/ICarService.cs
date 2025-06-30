@@ -10,5 +10,11 @@ namespace BLL.Interfaces
         Task<CarDTO> CreateCarAsync(CreateCarDTO createCarDto, CancellationToken cancellationToken = default);
         Task UpdateCarAsync(UpdateCarDTO updateCarDto, CancellationToken cancellationToken = default);
         Task DeleteCarAsync(string id, CancellationToken cancellationToken = default);
+
+
+
+        Task<IEnumerable<CarDTO>> GetAllCarsFilteredAsync(string? Brand, string? Model, int? dailyRate, int? hourlyRate, CancellationToken cancellationToken = default);
+        Task<IEnumerable<CarDTO>> GetAllCarsByCharacteristicAsync(string? fuelType, string? transmission, int? seats, string? color, CancellationToken cancellationToken = default);
+
     }
 }

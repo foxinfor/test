@@ -280,5 +280,67 @@
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Test.Controllers.CarController",
+    "Method": "GetAllCarsByCharacteristic",
+    "RelativePath": "api/cars/characteristic",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fuelType",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "transmission",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "seats",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "color",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Test.Controllers.CarController",
+    "Method": "GetAllCarsFiltered",
+    "RelativePath": "api/cars/filtered",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "brand",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "model",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "dailyRate",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "hourlyRate",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

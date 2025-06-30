@@ -29,6 +29,8 @@ namespace DAL.Configurations
             builder.HasCheckConstraint("CK_InspectionReport_FinalCharge", "FinalCharge >= 0");
 
 
+            builder.Property(ir => ir.Rating).IsRequired();
+            builder.HasCheckConstraint("CK_InspectionReport_Rating", "Rating >= 0 AND Rating <= 10");
         }
     }
 }

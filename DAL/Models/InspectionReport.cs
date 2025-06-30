@@ -14,5 +14,7 @@
         public List<string> Photos { get; set; }
         public int FinalCharge { get; set; }
         public string Notes { get; set; }
+
+        public int Rating { get; set; } 
     }
 }

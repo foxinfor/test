@@ -36,5 +36,10 @@ namespace BLL.DTO.Requests
 
         [StringLength(1000, ErrorMessage = "Примечание не должно превышать 1000 символов.")]
         public string Notes { get; set; }
+
+        [Range(0, 10, ErrorMessage = "Рейтинг должен быть от 0 до 10.")]
+
+        public int Rating { get; set; }
+
     }
 }

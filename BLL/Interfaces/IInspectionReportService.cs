@@ -12,6 +12,7 @@ namespace BLL.Interfaces
         Task DeleteInspectionReportAsync(string id, CancellationToken cancellationToken = default);
 
         Task<int> CalculateTotalRevenueAsync(CancellationToken cancellationToken = default);
+        Task<Dictionary<string, double>> CalculateAverageRatingPerCarAsync(CancellationToken cancellationToken = default);
 
     }
 }

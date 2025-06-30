@@ -38,7 +38,6 @@ namespace BLL.DTO.Requests
         public string Notes { get; set; }
 
         [Range(0, 10, ErrorMessage = "Рейтинг должен быть от 0 до 10.")]
-
         public int Rating { get; set; }
 
     }

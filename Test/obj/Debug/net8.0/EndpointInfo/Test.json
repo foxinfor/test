@@ -768,6 +768,18 @@
         }
       }
     },
+    "/api/admin/rating": {
+      "get": {
+        "tags": [
+          "ForAdmin"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/reports/all": {
       "get": {
         "tags": [
@@ -843,6 +855,12 @@
                     "maxLength": 1000,
                     "minLength": 0,
                     "type": "string"
+                  },
+                  "Rating": {
+                    "maximum": 10,
+                    "minimum": 0,
+                    "type": "integer",
+                    "format": "int32"
                   }
                 }
               },
@@ -872,6 +890,9 @@
                   "style": "form"
                 },
                 "Notes": {
+                  "style": "form"
+                },
+                "Rating": {
                   "style": "form"
                 }
               }

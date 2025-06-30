@@ -99,5 +99,33 @@ namespace BLL.Services
             return allReports.Sum(report => report.FinalCharge);
         }
 
+
+        public async Task<Dictionary<string, double>> CalculateAverageRatingPerCarAsync(CancellationToken cancellationToken = default)
+        {
+            var reports = await _repository.GetAllAsync(cancellationToken);
+
+            var results = new Dictionary<string, List<int>>();
+
+            foreach (var report in reports)
+            {
+                var booking = await _bookingRepository.GetByIdAsync(report.BookingId, cancellationToken);
+                if (booking == null)
+                    continue;
+
+                var carId = booking.CarId;
+
+                if (!results.ContainsKey(carId))
+                {
+                    results[carId] = new List<int>();
+                }
+
+                results[carId].Add(report.Rating);
+            }
+
+            return results.ToDictionary(
+                pair => pair.Key,
+                pair => pair.Value.Average()
+            );
+        }
     }
 }

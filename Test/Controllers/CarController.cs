@@ -1,5 +1,6 @@
 ﻿using BLL.DTO.Requests;
 using BLL.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Test.Controllers
@@ -15,7 +16,7 @@ namespace Test.Controllers
             _carService = carService;
         }
 
-        //[Authorize(Policy = "AuthenticatedUsers")]
+        [Authorize(Policy = "AuthenticatedUsers")]
         [HttpGet("all")]
         public async Task<IActionResult> GetAllCars(CancellationToken cancellationToken = default)
         {
@@ -25,7 +26,7 @@ namespace Test.Controllers
 
 
 
-        //[Authorize(Policy = "AuthenticatedUsers")]
+        [Authorize(Policy = "AuthenticatedUsers")]
         [HttpPost]
         public async Task<IActionResult> CreateCar([FromForm] CreateCarDTO createCarDto, CancellationToken cancellationToken = default)
         {
@@ -34,7 +35,7 @@ namespace Test.Controllers
         }
 
 
-        //[Authorize(Policy = "AuthenticatedUsers")]
+        [Authorize(Policy = "AuthenticatedUsers")]
         [HttpGet("{id}")]
         public async Task<IActionResult> GetCarById(string id, CancellationToken cancellationToken = default)
         {
@@ -43,7 +44,7 @@ namespace Test.Controllers
         }
 
 
-        //[Authorize(Policy = "AuthenticatedUsers")]
+        [Authorize(Policy = "AuthenticatedUsers")]
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateCar([FromForm] UpdateCarDTO updateCarDTO, CancellationToken cancellationToken = default)
         {
@@ -52,7 +53,7 @@ namespace Test.Controllers
         }
 
 
-        //[Authorize(Policy = "OnlyAdminUsers")]
+        [Authorize(Policy = "OnlyAuthenticatesUsers")]
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteCar(string id, CancellationToken cancellationToken = default)
         {
@@ -60,7 +61,7 @@ namespace Test.Controllers
             return NoContent();
         }
 
-        //[Authorize(Policy = "OnlyAuthenticatesUsers")]
+        [Authorize(Policy = "OnlyAuthenticatesUsers")]
         [HttpGet("filtered")]
         public async Task<IActionResult> GetAllCarsFiltered([FromQuery] string? brand, [FromQuery] string? model, [FromQuery] int? dailyRate, 
             [FromQuery] int? hourlyRate, CancellationToken cancellationToken = default)
@@ -70,7 +71,7 @@ namespace Test.Controllers
         }
 
 
-        //[Authorize(Policy = "OnlyAuthenticatesUsers")]
+        [Authorize(Policy = "OnlyAuthenticatesUsers")]
         [HttpGet("characteristic")]
         public async Task<IActionResult> GetAllCarsByCharacteristic([FromQuery] string? fuelType, [FromQuery] string? transmission, [FromQuery] int? seats,
             [FromQuery] string? color, CancellationToken cancellationToken = default)

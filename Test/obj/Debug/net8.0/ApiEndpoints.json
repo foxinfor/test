@@ -1,6 +1,16 @@
 [
   {
     "ContainingType": "Test.Controllers.ForAdminController",
+    "Method": "Rating",
+    "RelativePath": "api/admin/rating",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Test.Controllers.ForAdminController",
     "Method": "Money",
     "RelativePath": "api/admin/revenue",
     "HttpMethod": "GET",
@@ -518,6 +528,11 @@
       {
         "Name": "Notes",
         "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Rating",
+        "Type": "System.Int32",
         "IsRequired": false
       }
     ],

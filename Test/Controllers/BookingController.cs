@@ -1,6 +1,7 @@
 ﻿using BLL.DTO.Requests;
 using BLL.Interfaces;
 using BLL.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Test.Controllers
@@ -16,7 +17,7 @@ namespace Test.Controllers
             _bookingService = bookingService;
         }
 
-        //[Authorize(Policy = "AuthenticatedUsers")]
+        [Authorize(Policy = "AuthenticatedUsers")]
         [HttpPost]
         public async Task<IActionResult> CreateBooking([FromForm] CreateBookingDTO createBookingDTO, CancellationToken cancellationToken = default)
         {
@@ -30,7 +31,7 @@ namespace Test.Controllers
         }
 
 
-
+        [Authorize(Policy = "AuthenticatedUsers")]
         [HttpGet("{id}")]
         public async Task<IActionResult> GetBookingById(string id, CancellationToken cancellationToken = default)
         {
@@ -39,7 +40,7 @@ namespace Test.Controllers
         }
 
 
-        //[Authorize(Policy = "AuthenticatedUsers")]
+        [Authorize(Policy = "AuthenticatedUsers")]
         [HttpGet("all")]
         public async Task<IActionResult> GetAllBookings(CancellationToken cancellationToken = default)  
         {
@@ -47,7 +48,7 @@ namespace Test.Controllers
             return Ok(bookings);
         }
 
-
+        [Authorize(Policy = "AuthenticatedUsers")]
         [HttpPatch("{id}/confirm")]
         public async Task<IActionResult> ConfirmBooking(string id, CancellationToken cancellationToken = default)
         {
@@ -55,14 +56,12 @@ namespace Test.Controllers
             return Ok("Статус подтверждён");
         }
 
-
+        [Authorize(Policy = "AuthenticatedUsers")]
         [HttpGet("{id}/contract")]
         public async Task<IActionResult> GetRentalContract(string id, CancellationToken cancellationToken = default)
         {
             var pdfBytes = await _bookingService.GenerateRentalAgreementAsync(id, cancellationToken);
             return File(pdfBytes, "application/pdf", $"RentalAgreement_{id}.pdf");
         }
-
-
     }
 }

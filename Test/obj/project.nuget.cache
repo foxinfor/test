@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "QfRaonfgaCs=",
+  "dgSpecHash": "mXjZxvFiKMQ=",
   "success": true,
   "projectFilePath": "D:\\labs\\c#\\modsen\\Test\\Test.csproj",
   "expectedPackageFiles": [
@@ -68,6 +68,7 @@
     "C:\\Users\\123\\.nuget\\packages\\nito.asyncex.tasks\\5.1.2\\nito.asyncex.tasks.5.1.2.nupkg.sha512",
     "C:\\Users\\123\\.nuget\\packages\\nito.collections.deque\\1.1.1\\nito.collections.deque.1.1.1.nupkg.sha512",
     "C:\\Users\\123\\.nuget\\packages\\nito.disposables\\2.2.1\\nito.disposables.2.2.1.nupkg.sha512",
+    "C:\\Users\\123\\.nuget\\packages\\questpdf\\2025.5.1\\questpdf.2025.5.1.nupkg.sha512",
     "C:\\Users\\123\\.nuget\\packages\\ravendb.client\\7.0.4\\ravendb.client.7.0.4.nupkg.sha512",
     "C:\\Users\\123\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",
     "C:\\Users\\123\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",

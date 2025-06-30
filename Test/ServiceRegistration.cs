@@ -26,6 +26,7 @@ namespace Test
             services.AddScoped<IAuthService, AuthService>();
             services.AddScoped<ITokenService, TokenService>();
             services.AddScoped<IImageService, ImageService>();
+            services.AddScoped<IPdfService, PdfService>();
         }
 
         public static void AddValidators(this IServiceCollection services)

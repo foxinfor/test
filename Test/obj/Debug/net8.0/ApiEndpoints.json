@@ -147,6 +147,22 @@
   },
   {
     "ContainingType": "Test.Controllers.BookingController",
+    "Method": "GetRentalContract",
+    "RelativePath": "api/booking/{id}/contract",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Test.Controllers.BookingController",
     "Method": "GetAllBookings",
     "RelativePath": "api/booking/all",
     "HttpMethod": "GET",

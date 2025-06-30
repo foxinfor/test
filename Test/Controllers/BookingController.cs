@@ -41,7 +41,7 @@ namespace Test.Controllers
 
         //[Authorize(Policy = "AuthenticatedUsers")]
         [HttpGet("all")]
-        public async Task<IActionResult> GetAllBookings(CancellationToken cancellationToken = default)
+        public async Task<IActionResult> GetAllBookings(CancellationToken cancellationToken = default)  
         {
             var bookings = await _bookingService.GetAllBookingAsync(cancellationToken);
             return Ok(bookings);
@@ -54,6 +54,15 @@ namespace Test.Controllers
             await _bookingService.ConfirmBookingAsync(id, cancellationToken);
             return Ok("Статус подтверждён");
         }
+
+
+        [HttpGet("{id}/contract")]
+        public async Task<IActionResult> GetRentalContract(string id, CancellationToken cancellationToken = default)
+        {
+            var pdfBytes = await _bookingService.GenerateRentalAgreementAsync(id, cancellationToken);
+            return File(pdfBytes, "application/pdf", $"RentalAgreement_{id}.pdf");
+        }
+
 
     }
 }

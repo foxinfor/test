@@ -11,6 +11,7 @@ namespace BLL.Interfaces
         Task UpdateBookingAsync(UpdateBookingDTO updateBookingDto, CancellationToken cancellationToken = default);
         Task DeleteBookingAsync(string id, CancellationToken cancellationToken = default);
 
+        Task<byte[]> GenerateRentalAgreementAsync(string bookingId, CancellationToken cancellationToken = default);
 
         Task ConfirmBookingAsync(string bookingId, CancellationToken cancellationToken = default);
 

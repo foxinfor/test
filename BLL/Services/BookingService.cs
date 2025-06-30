@@ -6,7 +6,6 @@ using BLL.Interfaces;
 using DAL.Interfaces;
 using DAL.Models;
 using FluentValidation;
-using Raven.Client.Exceptions;
 
 namespace BLL.Services
 {
@@ -14,12 +13,14 @@ namespace BLL.Services
     {
         private readonly IBookingRepository _bookingRepository;
         private readonly ICarRepository _carRepository;
+        private readonly IPdfService _pdfService;
         private readonly IMapper _mapper;
         private readonly IValidator<BookingDTO> _bookingDTOValidator;
         private readonly IValidator<CreateBookingDTO> _createBookingDTOValidator;
         private readonly IValidator<UpdateBookingDTO> _updateBookingDTOValidator;
 
         public BookingService(IBookingRepository bookingRepository, IMapper mapper, ICarRepository carRepository,
+            IPdfService pdfService,
             IValidator<BookingDTO> bookingDTOValidator, IValidator<CreateBookingDTO> createBookingDTOValidator,
             IValidator<UpdateBookingDTO> updateBookingDTOValidator)
         {
@@ -29,6 +30,7 @@ namespace BLL.Services
             _createBookingDTOValidator = createBookingDTOValidator;
             _updateBookingDTOValidator = updateBookingDTOValidator;
             _carRepository = carRepository;
+            _pdfService = pdfService;
         }
 
 
@@ -118,6 +120,16 @@ namespace BLL.Services
 
             await _bookingRepository.UpdateAsync(booking, cancellationToken);
         }
+
+        public async Task<byte[]> GenerateRentalAgreementAsync(string bookingId, CancellationToken cancellationToken = default)
+        {
+            var booking = await _bookingRepository.GetByIdAsync(bookingId, cancellationToken);
+            if (booking == null)
+                throw new InvalidOperationException("Бронирование не найдено.");
+
+            return await _pdfService.GenerateRentalAgreementAsync(booking, cancellationToken);
+        }
+
 
 
 

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "HIq46Tvi3jI=",
+  "dgSpecHash": "2k8O7/A9vTs=",
   "success": true,
   "projectFilePath": "D:\\labs\\c#\\modsen\\BLL\\BLL.csproj",
   "expectedPackageFiles": [
@@ -50,6 +50,7 @@
     "C:\\Users\\123\\.nuget\\packages\\nito.asyncex.tasks\\5.1.2\\nito.asyncex.tasks.5.1.2.nupkg.sha512",
     "C:\\Users\\123\\.nuget\\packages\\nito.collections.deque\\1.1.1\\nito.collections.deque.1.1.1.nupkg.sha512",
     "C:\\Users\\123\\.nuget\\packages\\nito.disposables\\2.2.1\\nito.disposables.2.2.1.nupkg.sha512",
+    "C:\\Users\\123\\.nuget\\packages\\questpdf\\2025.5.1\\questpdf.2025.5.1.nupkg.sha512",
     "C:\\Users\\123\\.nuget\\packages\\ravendb.client\\7.0.4\\ravendb.client.7.0.4.nupkg.sha512",
     "C:\\Users\\123\\.nuget\\packages\\system.clientmodel\\1.0.0\\system.clientmodel.1.0.0.nupkg.sha512",
     "C:\\Users\\123\\.nuget\\packages\\system.collections.immutable\\9.0.5\\system.collections.immutable.9.0.5.nupkg.sha512",

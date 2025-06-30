@@ -75,6 +75,10 @@
               "target": "Package",
               "version": "[9.0.3, )"
             },
+            "QuestPDF": {
+              "target": "Package",
+              "version": "[2025.5.1, )"
+            },
             "RavenDB.Client": {
               "target": "Package",
               "version": "[7.0.4, )"

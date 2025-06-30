@@ -3,6 +3,58 @@
   "WorkspaceRootPath": "D:\\labs\\c#\\modsen\\Test\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F2DCAF0A-F579-4F84-9B30-D197817B87C3}|..\\ForTest\\ForTest.csproj|d:\\labs\\c#\\modsen\\fortest\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9ED3341-A6FB-405E-B1F5-E4346B98ABCF}|..\\BLL\\BLL.csproj|d:\\labs\\c#\\modsen\\bll\\services\\bookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9ED3341-A6FB-405E-B1F5-E4346B98ABCF}|..\\BLL\\BLL.csproj|d:\\labs\\c#\\modsen\\bll\\services\\carservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2DCAF0A-F579-4F84-9B30-D197817B87C3}|..\\ForTest\\ForTest.csproj|d:\\labs\\c#\\modsen\\fortest\\repositorytest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D262BA3-7281-4806-9D6F-E62CDE8B7F75}|..\\DAL\\DAL.csproj|d:\\labs\\c#\\modsen\\dal\\models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D262BA3-7281-4806-9D6F-E62CDE8B7F75}|..\\DAL\\DAL.csproj|d:\\labs\\c#\\modsen\\dal\\repositories\\carsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D262BA3-7281-4806-9D6F-E62CDE8B7F75}|..\\DAL\\DAL.csproj|d:\\labs\\c#\\modsen\\dal\\repositories\\inspectionreportrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D262BA3-7281-4806-9D6F-E62CDE8B7F75}|..\\DAL\\DAL.csproj|d:\\labs\\c#\\modsen\\dal\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D262BA3-7281-4806-9D6F-E62CDE8B7F75}|..\\DAL\\DAL.csproj|d:\\labs\\c#\\modsen\\dal\\repositories\\bookingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B53C53A8-A035-43F1-A3E2-C895342C3851}|Test.csproj|d:\\labs\\c#\\modsen\\test\\controllers\\foradmincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B53C53A8-A035-43F1-A3E2-C895342C3851}|Test.csproj|solutionrelative:controllers\\foradmincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B53C53A8-A035-43F1-A3E2-C895342C3851}|Test.csproj|d:\\labs\\c#\\modsen\\test\\controllers\\carcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B53C53A8-A035-43F1-A3E2-C895342C3851}|Test.csproj|solutionrelative:controllers\\carcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B53C53A8-A035-43F1-A3E2-C895342C3851}|Test.csproj|d:\\labs\\c#\\modsen\\test\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B53C53A8-A035-43F1-A3E2-C895342C3851}|Test.csproj|solutionrelative:controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B53C53A8-A035-43F1-A3E2-C895342C3851}|Test.csproj|d:\\labs\\c#\\modsen\\test\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B53C53A8-A035-43F1-A3E2-C895342C3851}|Test.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9ED3341-A6FB-405E-B1F5-E4346B98ABCF}|..\\BLL\\BLL.csproj|d:\\labs\\c#\\modsen\\bll\\services\\inspectionreportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9ED3341-A6FB-405E-B1F5-E4346B98ABCF}|..\\BLL\\BLL.csproj|d:\\labs\\c#\\modsen\\bll\\interfaces\\iinspectionreportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9ED3341-A6FB-405E-B1F5-E4346B98ABCF}|..\\BLL\\BLL.csproj|d:\\labs\\c#\\modsen\\bll\\dto\\models\\inspectionreportdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9D262BA3-7281-4806-9D6F-E62CDE8B7F75}|..\\DAL\\DAL.csproj|d:\\labs\\c#\\modsen\\dal\\applicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -23,9 +75,6 @@
       "AbsoluteMoniker": "D:0:0:{E9ED3341-A6FB-405E-B1F5-E4346B98ABCF}|..\\BLL\\BLL.csproj|d:\\labs\\c#\\modsen\\bll\\dto\\requests\\createinspectionreportdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E9ED3341-A6FB-405E-B1F5-E4346B98ABCF}|..\\BLL\\BLL.csproj|d:\\labs\\c#\\modsen\\bll\\dto\\models\\inspectionreportdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E9ED3341-A6FB-405E-B1F5-E4346B98ABCF}|..\\BLL\\BLL.csproj|d:\\labs\\c#\\modsen\\bll\\validators\\createinspectionreportdtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -36,9 +85,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{9D262BA3-7281-4806-9D6F-E62CDE8B7F75}|..\\DAL\\DAL.csproj|d:\\labs\\c#\\modsen\\dal\\models\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9D262BA3-7281-4806-9D6F-E62CDE8B7F75}|..\\DAL\\DAL.csproj|d:\\labs\\c#\\modsen\\dal\\models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -82,11 +128,206 @@
         },
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BookingService.cs",
+              "DocumentMoniker": "D:\\labs\\c#\\modsen\\BLL\\Services\\BookingService.cs",
+              "RelativeDocumentMoniker": "..\\BLL\\Services\\BookingService.cs",
+              "ToolTip": "D:\\labs\\c#\\modsen\\BLL\\Services\\BookingService.cs",
+              "RelativeToolTip": "..\\BLL\\Services\\BookingService.cs",
+              "ViewState": "AgIAAIIAAAAAAAAAAAAqwI8AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T14:44:52.057Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CarService.cs",
+              "DocumentMoniker": "D:\\labs\\c#\\modsen\\BLL\\Services\\CarService.cs",
+              "RelativeDocumentMoniker": "..\\BLL\\Services\\CarService.cs",
+              "ToolTip": "D:\\labs\\c#\\modsen\\BLL\\Services\\CarService.cs",
+              "RelativeToolTip": "..\\BLL\\Services\\CarService.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAswAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T14:44:46.451Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BookingRepository.cs",
+              "DocumentMoniker": "D:\\labs\\c#\\modsen\\DAL\\Repositories\\BookingRepository.cs",
+              "RelativeDocumentMoniker": "..\\DAL\\Repositories\\BookingRepository.cs",
+              "ToolTip": "D:\\labs\\c#\\modsen\\DAL\\Repositories\\BookingRepository.cs",
+              "RelativeToolTip": "..\\DAL\\Repositories\\BookingRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T14:27:29.096Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CarsRepository.cs",
+              "DocumentMoniker": "D:\\labs\\c#\\modsen\\DAL\\Repositories\\CarsRepository.cs",
+              "RelativeDocumentMoniker": "..\\DAL\\Repositories\\CarsRepository.cs",
+              "ToolTip": "D:\\labs\\c#\\modsen\\DAL\\Repositories\\CarsRepository.cs",
+              "RelativeToolTip": "..\\DAL\\Repositories\\CarsRepository.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAuwCEAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T14:27:16.118Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RepositoryTest.cs",
+              "DocumentMoniker": "D:\\labs\\c#\\modsen\\ForTest\\RepositoryTest.cs",
+              "RelativeDocumentMoniker": "..\\ForTest\\RepositoryTest.cs",
+              "ToolTip": "D:\\labs\\c#\\modsen\\ForTest\\RepositoryTest.cs",
+              "RelativeToolTip": "..\\ForTest\\RepositoryTest.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAqwFEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T14:18:49.669Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "D:\\labs\\c#\\modsen\\ForTest\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "..\\ForTest\\UnitTest1.cs",
+              "ToolTip": "D:\\labs\\c#\\modsen\\ForTest\\UnitTest1.cs",
+              "RelativeToolTip": "..\\ForTest\\UnitTest1.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAuwGcAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T14:14:48.796Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "InspectionReportRepository.cs",
+              "DocumentMoniker": "D:\\labs\\c#\\modsen\\DAL\\Repositories\\InspectionReportRepository.cs",
+              "RelativeDocumentMoniker": "..\\DAL\\Repositories\\InspectionReportRepository.cs",
+              "ToolTip": "D:\\labs\\c#\\modsen\\DAL\\Repositories\\InspectionReportRepository.cs",
+              "RelativeToolTip": "..\\DAL\\Repositories\\InspectionReportRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T14:27:33.457Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "D:\\labs\\c#\\modsen\\DAL\\Repositories\\Repository.cs",
+              "RelativeDocumentMoniker": "..\\DAL\\Repositories\\Repository.cs",
+              "ToolTip": "D:\\labs\\c#\\modsen\\DAL\\Repositories\\Repository.cs",
+              "RelativeToolTip": "..\\DAL\\Repositories\\Repository.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAiwC4AAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T14:27:35.777Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Car.cs",
+              "DocumentMoniker": "D:\\labs\\c#\\modsen\\DAL\\Models\\Car.cs",
+              "RelativeDocumentMoniker": "..\\DAL\\Models\\Car.cs",
+              "ToolTip": "D:\\labs\\c#\\modsen\\DAL\\Models\\Car.cs",
+              "RelativeToolTip": "..\\DAL\\Models\\Car.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAAAsAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T08:08:27.34Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CarController.cs",
+              "DocumentMoniker": "D:\\labs\\c#\\modsen\\Test\\Controllers\\CarController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CarController.cs",
+              "ToolTip": "D:\\labs\\c#\\modsen\\Test\\Controllers\\CarController.cs",
+              "RelativeToolTip": "Controllers\\CarController.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAmwD0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T14:07:15.847Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "BookingController.cs",
+              "DocumentMoniker": "D:\\labs\\c#\\modsen\\Test\\Controllers\\BookingController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BookingController.cs",
+              "ToolTip": "D:\\labs\\c#\\modsen\\Test\\Controllers\\BookingController.cs",
+              "RelativeToolTip": "Controllers\\BookingController.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAgwDkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T14:07:14.618Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\labs\\c#\\modsen\\Test\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
+              "ToolTip": "D:\\labs\\c#\\modsen\\Test\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T14:07:07.324Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IInspectionReportService.cs",
+              "DocumentMoniker": "D:\\labs\\c#\\modsen\\BLL\\Interfaces\\IInspectionReportService.cs",
+              "RelativeDocumentMoniker": "..\\BLL\\Interfaces\\IInspectionReportService.cs",
+              "ToolTip": "D:\\labs\\c#\\modsen\\BLL\\Interfaces\\IInspectionReportService.cs",
+              "RelativeToolTip": "..\\BLL\\Interfaces\\IInspectionReportService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T14:01:29.551Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "InspectionReportService.cs",
+              "DocumentMoniker": "D:\\labs\\c#\\modsen\\BLL\\Services\\InspectionReportService.cs",
+              "RelativeDocumentMoniker": "..\\BLL\\Services\\InspectionReportService.cs",
+              "ToolTip": "D:\\labs\\c#\\modsen\\BLL\\Services\\InspectionReportService.cs",
+              "RelativeToolTip": "..\\BLL\\Services\\InspectionReportService.cs",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAuwG8AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T14:00:21.513Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ForAdminController.cs",
+              "DocumentMoniker": "D:\\labs\\c#\\modsen\\Test\\Controllers\\ForAdminController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ForAdminController.cs",
+              "ToolTip": "D:\\labs\\c#\\modsen\\Test\\Controllers\\ForAdminController.cs",
+              "RelativeToolTip": "Controllers\\ForAdminController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAiwBYAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T14:00:05.913Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "ApplicationContext.cs",
               "DocumentMoniker": "D:\\labs\\c#\\modsen\\DAL\\ApplicationContext.cs",
               "RelativeDocumentMoniker": "..\\DAL\\ApplicationContext.cs",
@@ -99,7 +340,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 15,
+              "Title": "InspectionReportDTO.cs",
+              "DocumentMoniker": "D:\\labs\\c#\\modsen\\BLL\\DTO\\Models\\InspectionReportDTO.cs",
+              "RelativeDocumentMoniker": "..\\BLL\\DTO\\Models\\InspectionReportDTO.cs",
+              "ToolTip": "D:\\labs\\c#\\modsen\\BLL\\DTO\\Models\\InspectionReportDTO.cs",
+              "RelativeToolTip": "..\\BLL\\DTO\\Models\\InspectionReportDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T13:47:06.568Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "InspectionReportController.cs",
               "DocumentMoniker": "D:\\labs\\c#\\modsen\\Test\\Controllers\\InspectionReportController.cs",
               "RelativeDocumentMoniker": "Controllers\\InspectionReportController.cs",
@@ -112,7 +366,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 20,
               "Title": "UpdateInspectionReportDTO.cs",
               "DocumentMoniker": "D:\\labs\\c#\\modsen\\BLL\\DTO\\Requests\\UpdateInspectionReportDTO.cs",
               "RelativeDocumentMoniker": "..\\BLL\\DTO\\Requests\\UpdateInspectionReportDTO.cs",
@@ -125,7 +379,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 21,
               "Title": "CreateInspectionReportDTO.cs",
               "DocumentMoniker": "D:\\labs\\c#\\modsen\\BLL\\DTO\\Requests\\CreateInspectionReportDTO.cs",
               "RelativeDocumentMoniker": "..\\BLL\\DTO\\Requests\\CreateInspectionReportDTO.cs",
@@ -138,7 +392,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 17,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\labs\\c#\\modsen\\Test\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -151,20 +405,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "InspectionReportDTO.cs",
-              "DocumentMoniker": "D:\\labs\\c#\\modsen\\BLL\\DTO\\Models\\InspectionReportDTO.cs",
-              "RelativeDocumentMoniker": "..\\BLL\\DTO\\Models\\InspectionReportDTO.cs",
-              "ToolTip": "D:\\labs\\c#\\modsen\\BLL\\DTO\\Models\\InspectionReportDTO.cs",
-              "RelativeToolTip": "..\\BLL\\DTO\\Models\\InspectionReportDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-30T13:47:06.568Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 19,
               "Title": "InspectionReportDTOValidator.cs",
               "DocumentMoniker": "D:\\labs\\c#\\modsen\\BLL\\Validators\\InspectionReportDTOValidator.cs",
               "RelativeDocumentMoniker": "..\\BLL\\Validators\\InspectionReportDTOValidator.cs",
@@ -177,7 +418,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 22,
               "Title": "CreateInspectionReportDTOValidator.cs",
               "DocumentMoniker": "D:\\labs\\c#\\modsen\\BLL\\Validators\\CreateInspectionReportDTOValidator.cs",
               "RelativeDocumentMoniker": "..\\BLL\\Validators\\CreateInspectionReportDTOValidator.cs",
@@ -190,7 +431,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 23,
               "Title": "UpdateInspectionReportDTOValidator.cs",
               "DocumentMoniker": "D:\\labs\\c#\\modsen\\BLL\\Validators\\UpdateInspectionReportDTOValidator.cs",
               "RelativeDocumentMoniker": "..\\BLL\\Validators\\UpdateInspectionReportDTOValidator.cs",
@@ -203,7 +444,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 24,
               "Title": "InspectionReport.cs",
               "DocumentMoniker": "D:\\labs\\c#\\modsen\\DAL\\Models\\InspectionReport.cs",
               "RelativeDocumentMoniker": "..\\DAL\\Models\\InspectionReport.cs",
@@ -216,7 +457,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 25,
               "Title": "Booking.cs",
               "DocumentMoniker": "D:\\labs\\c#\\modsen\\DAL\\Models\\Booking.cs",
               "RelativeDocumentMoniker": "..\\DAL\\Models\\Booking.cs",
@@ -225,19 +466,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-30T09:50:07.061Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Car.cs",
-              "DocumentMoniker": "D:\\labs\\c#\\modsen\\DAL\\Models\\Car.cs",
-              "RelativeDocumentMoniker": "..\\DAL\\Models\\Car.cs",
-              "ToolTip": "D:\\labs\\c#\\modsen\\DAL\\Models\\Car.cs",
-              "RelativeToolTip": "..\\DAL\\Models\\Car.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-30T08:08:27.34Z",
               "EditorCaption": ""
             }
           ]

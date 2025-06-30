@@ -53,12 +53,12 @@ namespace BLL.Services
 
         public async Task<BookingDTO> CreateBookingAsync(CreateBookingDTO createBookingDto, CancellationToken cancellationToken = default)
         {
-            await _createBookingDTOValidator.ValidateAndThrowAsync(createBookingDto, cancellationToken);
+                await _createBookingDTOValidator.ValidateAndThrowAsync(createBookingDto, cancellationToken);
 
-            var booking = _mapper.Map<Booking>(createBookingDto);
-            await _bookingRepository.AddAsync(booking, cancellationToken);
+                var booking = _mapper.Map<Booking>(createBookingDto);
+                await _bookingRepository.AddAsync(booking, cancellationToken);
 
-            return _mapper.Map<BookingDTO>(booking);
+                return _mapper.Map<BookingDTO>(booking);
         }
 
         public async Task UpdateBookingAsync(UpdateBookingDTO updateBookingDto, CancellationToken cancellationToken = default)

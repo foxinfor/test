@@ -32,6 +32,7 @@ namespace BLL.Services
             await _createCarDTOValidator.ValidateAndThrowAsync(createCarDto, cancellationToken);
 
             var car = _mapper.Map<Car>(createCarDto);
+            car.Id = Guid.NewGuid().ToString();
             await _carRepository.AddAsync(car, cancellationToken);
 
             return _mapper.Map<CarDTO>(car);

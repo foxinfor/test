@@ -10,7 +10,6 @@ namespace DAL.Configurations
         {
             builder.HasKey(c => c.Id);
 
-            builder.Property(c => c.Id).HasMaxLength(36).IsRequired();
             builder.Property(c => c.Brand).HasMaxLength(50).IsRequired();
             builder.Property(c => c.Model).HasMaxLength(50).IsRequired();
             builder.Property(c => c.LicensePlate).HasMaxLength(15).IsRequired();

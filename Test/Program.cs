@@ -18,7 +18,7 @@ namespace Test
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            builder.Services.AddAutoMapper(typeof(UserProfile), typeof(BookingProfile), typeof(CarProfile), typeof(DamageProfile), typeof(InspectionReportProfile));
+            builder.Services.AddAutoMapper(typeof(UserProfile), typeof(BookingProfile), typeof(CarProfile), typeof(InspectionReportProfile));
             builder.Services.AddDbContext<ApplicationContext>(options =>
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
@@ -103,7 +103,7 @@ namespace Test
                 options.MultipartBodyLengthLimit = 5 * 1024 * 1024;
             });
 
-            builder.WebHost.UseUrls("http://+:8080");
+            //builder.WebHost.UseUrls("http://localhost:5000");
 
             var app = builder.Build();
             ConfigureAppSettings(app);

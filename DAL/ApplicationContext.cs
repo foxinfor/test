@@ -12,7 +12,6 @@ namespace DAL
 
         public DbSet<Booking> Bookings { get; set; }
         public DbSet<Car> Cars {  get; set; }
-        public DbSet<Damage> Damages { get; set; }
         public DbSet<InspectionReport> InspectionReports { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -22,7 +21,7 @@ namespace DAL
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.EnableSensitiveDataLogging();
-            optionsBuilder.ConfigureWarnings(warnings => warnings.Ignore(RelationalEventId.PendingModelChangesWarning));
+            //optionsBuilder.ConfigureWarnings(warnings => warnings.Ignore(RelationalEventId.PendingModelChangesWarning));
         }
     }
 }

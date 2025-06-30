@@ -8,7 +8,9 @@
         public DateTime ReturnDate { get; set; }
         public double FuelLevel { get; set; }
         public int Mileage { get; set; }
-        public List<Damage> Damages { get; set; }
+        public string Description { get; set; }
+        public string Severity { get; set; }
+        public int RepairCost { get; set; }
         public List<string> Photos { get; set; }
         public int FinalCharge { get; set; }
         public string Notes { get; set; }

@@ -19,6 +19,12 @@ namespace DAL.Configurations
             builder.Property(ir => ir.Mileage).IsRequired();
             builder.HasCheckConstraint("CK_InspectionReport_Mileage", "Mileage >= 0");
 
+            builder.Property(d => d.Description).HasMaxLength(255).IsRequired();
+            builder.Property(d => d.Severity).HasMaxLength(50).IsRequired();
+
+            builder.Property(d => d.RepairCost).IsRequired();
+            builder.HasCheckConstraint("CK_Damage_RepairCost", "RepairCost > 0");
+
             builder.Property(ir => ir.FinalCharge).IsRequired();
             builder.HasCheckConstraint("CK_InspectionReport_FinalCharge", "FinalCharge >= 0");
 

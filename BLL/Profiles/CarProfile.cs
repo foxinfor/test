@@ -9,7 +9,8 @@ namespace BLL.Profiles
     {
         public CarProfile() 
         {
-            CreateMap<Car, CarDTO>().ReverseMap();
+            CreateMap<Car, CarDTO>().ReverseMap()
+                .ForMember(dest => dest.Id, opt => opt.Ignore());
             CreateMap<CreateCarDTO, Car>().ReverseMap();
             CreateMap<UpdateCarDTO, Car>().ReverseMap();
         }

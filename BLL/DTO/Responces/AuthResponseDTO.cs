@@ -1,6 +1,6 @@
 ﻿namespace BLL.DTO.Responces
 {
-    public class AuthResponseDTO//сместить в api responce
+    public class AuthResponseDTO
     {
         public bool IsAuthenticated { get; set; }
         public string? ErrorMessage { get; set; }

@@ -24,8 +24,16 @@ namespace BLL.DTO.Requests
         [Range(0, int.MaxValue, ErrorMessage = "Пробег не может быть отрицательным.")]
         public int Mileage { get; set; }
 
-        public List<DamageDTO> Damages { get; set; } = new();
+        [Required]
+        [StringLength(500, ErrorMessage = "Описание не должно превышать 500 символов.")]
+        public string Description { get; set; }
 
+        [Required]
+        [RegularExpression("(?i)^(Low|Medium|High)$", ErrorMessage = "Допустимые значения: Low, Medium или High.")]
+        public string Severity { get; set; }
+
+        [Range(0, int.MaxValue, ErrorMessage = "Стоимость ремонта должна быть неотрицательной.")]
+        public int RepairCost { get; set; }
         public List<string> Photos { get; set; } = new();
 
         [Range(0, int.MaxValue, ErrorMessage = "Сумма начислений не может быть отрицательной.")]

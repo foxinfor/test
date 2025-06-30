@@ -2,10 +2,15 @@
 
 namespace BLL.DTO.Requests
 {
-    public class CreateBookingDTO//не до конца
+    public class CreateBookingDTO
     {
+        //[Required]
+        //public string UserId { get; set; }
+
         [Required]
-        public string UserId { get; set; }
+        [RegularExpression("^(daily|hourly)$", ErrorMessage = "Тип тарифа должен быть 'daily' или 'hourly'.")]
+        public string RateType { get; set; }
+
 
         [Required]
         public string CarId { get; set; }
@@ -19,8 +24,10 @@ namespace BLL.DTO.Requests
         [DataType(DataType.Date)]
         public DateTime EndDate { get; set; }
 
-        public string Status { get; set; }
-        public string PaymentStatus { get; set; }
+        //public int TotalPrice { get; set; }
+
+        //public string Status { get; set; }
+        //public string PaymentStatus { get; set; }
         public DateTime CreatedAt { get; set; }
 
         [Required]

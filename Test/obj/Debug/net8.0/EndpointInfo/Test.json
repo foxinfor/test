@@ -110,6 +110,158 @@
         }
       }
     },
+    "/api/booking": {
+      "post": {
+        "tags": [
+          "Booking"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "required": [
+                  "CarId",
+                  "DropoffLocation",
+                  "EndDate",
+                  "PickupLocation",
+                  "RateType",
+                  "StartDate"
+                ],
+                "type": "object",
+                "properties": {
+                  "RateType": {
+                    "pattern": "^(daily|hourly)$",
+                    "type": "string"
+                  },
+                  "CarId": {
+                    "type": "string"
+                  },
+                  "StartDate": {
+                    "type": "string",
+                    "format": "date"
+                  },
+                  "EndDate": {
+                    "type": "string",
+                    "format": "date"
+                  },
+                  "CreatedAt": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "PickupLocation": {
+                    "minLength": 3,
+                    "type": "string"
+                  },
+                  "DropoffLocation": {
+                    "minLength": 3,
+                    "type": "string"
+                  },
+                  "InsuranceType": {
+                    "type": "string"
+                  },
+                  "Extras": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "encoding": {
+                "RateType": {
+                  "style": "form"
+                },
+                "CarId": {
+                  "style": "form"
+                },
+                "StartDate": {
+                  "style": "form"
+                },
+                "EndDate": {
+                  "style": "form"
+                },
+                "CreatedAt": {
+                  "style": "form"
+                },
+                "PickupLocation": {
+                  "style": "form"
+                },
+                "DropoffLocation": {
+                  "style": "form"
+                },
+                "InsuranceType": {
+                  "style": "form"
+                },
+                "Extras": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/booking/{id}": {
+      "get": {
+        "tags": [
+          "Booking"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/booking/all": {
+      "get": {
+        "tags": [
+          "Booking"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/booking/{id}/confirm": {
+      "patch": {
+        "tags": [
+          "Booking"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/cars/all": {
       "get": {
         "tags": [

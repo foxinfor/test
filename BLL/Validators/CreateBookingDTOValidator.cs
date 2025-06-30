@@ -7,8 +7,8 @@ namespace BLL.Validators
     {
         public CreateBookingDTOValidator() 
         {
-            RuleFor(b => b.UserId)
-                .NotEmpty().WithMessage("UserId не должен быть пустым.");
+            //RuleFor(b => b.UserId)
+            //    .NotEmpty().WithMessage("UserId не должен быть пустым.");
 
             RuleFor(b => b.CarId)
                 .NotEmpty().WithMessage("CarId не должен быть пустым.");
@@ -20,11 +20,11 @@ namespace BLL.Validators
                 .NotEqual(default(DateTime)).WithMessage("EndDate должна быть задана.")
                 .GreaterThan(b => b.StartDate).WithMessage("EndDate должна быть позже StartDate.");
 
-            RuleFor(b => b.Status)
-                .NotEmpty().WithMessage("Status не должен быть пустым.");
+            //RuleFor(b => b.Status)
+            //    .NotEmpty().WithMessage("Status не должен быть пустым.");
 
-            RuleFor(b => b.PaymentStatus)
-                .NotEmpty().WithMessage("PaymentStatus не должен быть пустым.");
+            //RuleFor(b => b.PaymentStatus)
+            //    .NotEmpty().WithMessage("PaymentStatus не должен быть пустым.");
 
             RuleFor(b => b.CreatedAt)
                 .NotEqual(default(DateTime)).WithMessage("CreatedAt должна быть задана.");

@@ -74,6 +74,10 @@
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[9.0.3, )"
+            },
+            "RavenDB.Client": {
+              "target": "Package",
+              "version": "[7.0.4, )"
             }
           },
           "imports": [

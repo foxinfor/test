@@ -456,5 +456,87 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Test.Controllers.InspectionReportController",
+    "Method": "CreateReport",
+    "RelativePath": "api/reports",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "BookingId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ReturnDate",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "FuelLevel",
+        "Type": "System.Double",
+        "IsRequired": false
+      },
+      {
+        "Name": "Mileage",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Description",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Severity",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "RepairCost",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Photos",
+        "Type": "System.Collections.Generic.List\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Notes",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Test.Controllers.InspectionReportController",
+    "Method": "GetReportById",
+    "RelativePath": "api/reports/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Test.Controllers.InspectionReportController",
+    "Method": "GetAllReports",
+    "RelativePath": "api/reports/all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
   }
 ]

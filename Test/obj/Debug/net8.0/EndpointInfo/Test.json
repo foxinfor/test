@@ -755,6 +755,145 @@
           }
         }
       }
+    },
+    "/api/reports/all": {
+      "get": {
+        "tags": [
+          "InspectionReport"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/reports": {
+      "post": {
+        "tags": [
+          "InspectionReport"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "required": [
+                  "BookingId",
+                  "Description",
+                  "ReturnDate",
+                  "Severity"
+                ],
+                "type": "object",
+                "properties": {
+                  "BookingId": {
+                    "maxLength": 36,
+                    "minLength": 0,
+                    "type": "string"
+                  },
+                  "ReturnDate": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "FuelLevel": {
+                    "maximum": 100,
+                    "minimum": 0,
+                    "type": "number",
+                    "format": "double"
+                  },
+                  "Mileage": {
+                    "maximum": 2147483647,
+                    "minimum": 0,
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "Description": {
+                    "maxLength": 500,
+                    "minLength": 0,
+                    "type": "string"
+                  },
+                  "Severity": {
+                    "pattern": "(?i)^(Minor|Medium|High)$",
+                    "type": "string"
+                  },
+                  "RepairCost": {
+                    "maximum": 2147483647,
+                    "minimum": 0,
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "Photos": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "Notes": {
+                    "maxLength": 1000,
+                    "minLength": 0,
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "BookingId": {
+                  "style": "form"
+                },
+                "ReturnDate": {
+                  "style": "form"
+                },
+                "FuelLevel": {
+                  "style": "form"
+                },
+                "Mileage": {
+                  "style": "form"
+                },
+                "Description": {
+                  "style": "form"
+                },
+                "Severity": {
+                  "style": "form"
+                },
+                "RepairCost": {
+                  "style": "form"
+                },
+                "Photos": {
+                  "style": "form"
+                },
+                "Notes": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/reports/{id}": {
+      "get": {
+        "tags": [
+          "InspectionReport"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {

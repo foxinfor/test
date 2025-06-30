@@ -30,7 +30,7 @@ namespace BLL.DTO.Requests
         public string Description { get; set; }
 
         [Required]
-        [RegularExpression("(?i)^(Low|Medium|High)$", ErrorMessage = "Допустимые значения: Low, Medium или High.")]
+        [RegularExpression("(?i)^(Minor|Medium|High)$", ErrorMessage = "Допустимые значения: Minor, Medium или High.")]
         public string Severity { get; set; }
 
         [Range(0, int.MaxValue, ErrorMessage = "Стоимость ремонта должна быть неотрицательной.")]

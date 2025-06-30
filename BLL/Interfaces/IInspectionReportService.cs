@@ -7,7 +7,7 @@ namespace BLL.Interfaces
     {
         Task<IEnumerable<InspectionReportDTO>> GetAllInspectionReportAsync(CancellationToken cancellationToken = default);
         Task<InspectionReportDTO> GetInspectionReportByIdAsync(string id, CancellationToken cancellationToken = default);
-        Task<InspectionReportDTO> CreateInspectionReportAsync(CreateInspectionReportDTO createInspectionReportDto, CancellationToken cancellationToken = default);
+        Task<InspectionReportDTO> CreateInspectionReportAsync(CreateInspectionReportDTO createInspectionReportDto, string inspectorId, CancellationToken cancellationToken = default);
         Task UpdateInspectionReportAsync(UpdateInspectionReportDTO updateInspectionReportDto, CancellationToken cancellationToken = default);
         Task DeleteInspectionReportAsync(string id, CancellationToken cancellationToken = default);
     }

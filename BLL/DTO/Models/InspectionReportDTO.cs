@@ -10,7 +10,7 @@
         public int Mileage { get; set; }
         public string DescriptionDamage { get; set; }
         public string SeverityDamage { get; set; }
-        public int RepairCostDamage { get; set; }
+        public int RepairCost { get; set; }
         public List<string> Photos { get; set; }
         public int FinalCharge { get; set; }
         public string Notes { get; set; }

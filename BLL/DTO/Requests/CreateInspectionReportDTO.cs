@@ -11,9 +11,6 @@ namespace BLL.DTO.Requests
         [StringLength(36)]
         public string BookingId { get; set; }
 
-        [Required]
-        [StringLength(36)]
-        public string InspectorId { get; set; }
 
         [Required]
         public DateTime ReturnDate { get; set; }
@@ -29,15 +26,13 @@ namespace BLL.DTO.Requests
         public string Description { get; set; }
 
         [Required]
-        [RegularExpression("(?i)^(Low|Medium|High)$", ErrorMessage = "Допустимые значения: Low, Medium или High.")]
+        [RegularExpression("(?i)^(Minor|Medium|High)$", ErrorMessage = "Допустимые значения: Minor, Medium или High.")]
         public string Severity { get; set; }
 
         [Range(0, int.MaxValue, ErrorMessage = "Стоимость ремонта должна быть неотрицательной.")]
         public int RepairCost { get; set; }
         public List<string> Photos { get; set; } = new();
 
-        [Range(0, int.MaxValue, ErrorMessage = "Сумма начислений не может быть отрицательной.")]
-        public int FinalCharge { get; set; }
 
         [StringLength(1000, ErrorMessage = "Примечание не должно превышать 1000 символов.")]
         public string Notes { get; set; }

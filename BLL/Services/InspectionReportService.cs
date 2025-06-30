@@ -92,5 +92,12 @@ namespace BLL.Services
         {
             throw new NotImplementedException();
         }
+
+        public async Task<int> CalculateTotalRevenueAsync(CancellationToken cancellationToken = default)
+        {
+            var allReports = await _repository.GetAllAsync(cancellationToken);
+            return allReports.Sum(report => report.FinalCharge);
+        }
+
     }
 }

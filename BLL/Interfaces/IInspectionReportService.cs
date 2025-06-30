@@ -10,5 +10,8 @@ namespace BLL.Interfaces
         Task<InspectionReportDTO> CreateInspectionReportAsync(CreateInspectionReportDTO createInspectionReportDto, string inspectorId, CancellationToken cancellationToken = default);
         Task UpdateInspectionReportAsync(UpdateInspectionReportDTO updateInspectionReportDto, CancellationToken cancellationToken = default);
         Task DeleteInspectionReportAsync(string id, CancellationToken cancellationToken = default);
+
+        Task<int> CalculateTotalRevenueAsync(CancellationToken cancellationToken = default);
+
     }
 }

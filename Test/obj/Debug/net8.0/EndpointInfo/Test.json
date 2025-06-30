@@ -756,6 +756,18 @@
         }
       }
     },
+    "/api/admin/revenue": {
+      "get": {
+        "tags": [
+          "ForAdmin"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/reports/all": {
       "get": {
         "tags": [

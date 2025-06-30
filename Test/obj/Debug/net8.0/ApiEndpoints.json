@@ -1,5 +1,15 @@
 [
   {
+    "ContainingType": "Test.Controllers.ForAdminController",
+    "Method": "Money",
+    "RelativePath": "api/admin/revenue",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Test.Controllers.AuthController",
     "Method": "Authenticate",
     "RelativePath": "api/auth/authenticate",
